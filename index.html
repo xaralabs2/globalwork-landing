@@ -38,6 +38,11 @@
 
     
     <style>
+#countdown {
+    color: #FFE600; /* Gold accent */
+    font-size: 1rem;
+}
+<p><strong>🚀 Now recruiting our Founding 100 global-tech students.</strong></p>
 
 body {
     font-family: 'Inter', Arial, sans-serif;
@@ -152,7 +157,31 @@ button:hover {
         }
     </style>
 </head>
+<script>
+const launchDate = new Date("2026-01-21T00:00:00").getTime(); // Adjust if different date
+
+const x = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "🚀 We have launched!";
+        clearInterval(x);
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+        `⏳ Launching in <strong>${days}d ${hours}h ${minutes}m ${seconds}s</strong>`;
+}, 1000);
+</script>
+
 <body>
+    <div id="countdown" style="margin-top: 15px; font-size: 1rem; font-weight: bold;"></div>
 
     <h1>GlobalWork Academy</h1>
     <p>
@@ -160,7 +189,8 @@ button:hover {
         We are building Africa’s first global tech academy, training engineers for high-paying<br>
         <strong>remote roles worldwide.</strong><br><br>
         Our vision is to create <strong>borderless engineers</strong> — trained locally, deployed globally.<br><br>
-        <i>Launching 2025.</i>
+        <i>Launching January 2026 — countdown started.</i>
+
     </p>
 
     <div class="coming-soon">Coming Soon</div>
