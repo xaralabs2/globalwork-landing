@@ -176,18 +176,14 @@
             countdownEl.innerHTML = `⏳ Launching in <strong>${days}d ${hours}h ${minutes}m ${seconds}s</strong>`;
         }, 1000);
 
-        // Email Capture
+        // Redirect to waitlist form
         document.getElementById("notifyBtn").addEventListener("click", () => {
-            const email = document.getElementById("emailInput").value;
-            if (!email) {
-                alert("Please enter your email");
-                return;
-            }
-            window.location.href = `mailto:info@globalwork.academy?subject=Waitlist Request&body=Please add me to the waitlist: ${email}`;
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScuOg2FUKlOXhHmk9YxChiOIiMi2Jt9kFWskiyoVt77N3aS9A/viewform?usp=sharing&ouid=101947861132609878477";
         });
     </script>
 </body>
 </html>
+
 
 
 
