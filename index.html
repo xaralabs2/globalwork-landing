@@ -111,6 +111,14 @@
         <input type="email" placeholder="Join waitlist (email)">
         <button>Notify Me</button>
     </div>
+    <script>
+document.querySelector("button").addEventListener("click", function() {
+    const email = document.querySelector("input[type='email']").value;
+    if (!email) return alert("Please enter your email");
+    window.location.href = `mailto:info@globalwork.academy?subject=Waitlist Registration&body=Please add me to the waitlist: ${email}`;
+});
+</script>
+
 
     <footer>© 2025 GlobalWork Academy • Praia · Lagos · Mauritius</footer>
 
