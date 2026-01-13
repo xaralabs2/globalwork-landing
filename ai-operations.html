@@ -1,49 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>What Is AI Operations? | GlobalWork Academy</title>
-  <meta name="description" content="AI Operations is the discipline of supervising, controlling, and operating AI systems in production. Learn why AI Ops matters and how careers are built." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>What Is AI Operations? | GlobalWork Academy</title>
+
+    <!-- SEO -->
+    <meta name="description" content="AI Operations is the discipline of supervising, controlling, and operating AI systems in production environments. Learn why AI Ops matters." />
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #0076C8;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 12px;
+            color: #FFE600;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        ul {
+            margin-left: 20px;
+            line-height: 1.7;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #FFE600;
+            font-weight: 600;
+        }
+
+        .callout {
+            background: rgba(255, 230, 0, 0.12);
+            border-left: 4px solid #FFE600;
+            padding: 16px 20px;
+            margin: 30px 0;
+            font-size: 1.05rem;
+        }
+
+        .cta {
+            margin-top: 50px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cta a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: #FFE600;
+            color: #000;
+            font-weight: 700;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .cta a:hover {
+            background: #fff3a0;
+        }
+
+        .back-link {
+            margin-top: 40px;
+            display: block;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .back-link a {
+            color: #FFE600;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 70px;
+            text-align: center;
+            font-size: 0.75rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
 </head>
+
 <body>
+<div class="container">
 
-<h1>What Is AI Operations?</h1>
+    <h1>What Is AI Operations?</h1>
 
-<p>
-AI Operations (AI Ops) is the discipline of designing, supervising, and controlling
-AI systems once they are deployed into real production environments.
-</p>
+    <p>
+        <span class="highlight">AI Operations (AI Ops)</span> is the discipline of designing,
+        supervising, and controlling AI systems once they are deployed into
+        real production environments.
+    </p>
 
-<h2>Why AI Operations Exists</h2>
-<p>
-Most AI failures do not come from bad models. They come from uncontrolled automation,
-missing oversight, cost explosions, and lack of accountability after deployment.
-</p>
+    <p>
+        It focuses not on how models are trained, but on how AI behaves
+        <strong>after deployment</strong> — when decisions affect customers,
+        revenue, safety, and trust.
+    </p>
 
-<h2>What AI Operations Controls</h2>
-<ul>
-  <li>Which AI models are allowed to run</li>
-  <li>What agents are permitted to do</li>
-  <li>How workflows execute and escalate</li>
-  <li>How decisions are logged and audited</li>
-</ul>
+    <div class="callout">
+        Most AI failures do not come from bad models.
+        They come from uncontrolled automation, missing oversight,
+        cost explosions, and lack of accountability.
+    </div>
 
-<h2>AI Operations vs MLOps</h2>
-<p>
-MLOps focuses on training and deploying models. AI Operations focuses on controlling
-behavior, reliability, and human oversight in live systems.
-</p>
+    <h2>Why AI Operations Exists</h2>
 
-<h2>Careers in AI Operations</h2>
-<p>
-AI Operator, AI Systems Engineer, Agentic Systems Engineer, AI Platform Architect.
-</p>
+    <p>
+        As AI systems become embedded in logistics, finance, real estate,
+        healthcare, and infrastructure, organizations need people who can
+        <strong>operate AI safely and predictably</strong>.
+    </p>
 
-<p>
-👉 <a href="index.html">Join the GlobalWork Academy waitlist</a>
-</p>
+    <p>
+        AI Operations exists to ensure:
+    </p>
 
+    <ul>
+        <li>AI decisions are observable and auditable</li>
+        <li>Automation has clear boundaries</li>
+        <li>Humans remain in control</li>
+        <li>Failures are detected and escalated early</li>
+    </ul>
+
+    <h2>What AI Operations Controls</h2>
+
+    <ul>
+        <li><strong>Model control</strong> — which models can run, when, and why</li>
+        <li><strong>Agent control</strong> — what autonomous systems are allowed to do</li>
+        <li><strong>Workflow control</strong> — execution order, approvals, escalation</li>
+        <li><strong>Policy & governance</strong> — logging, audit trails, compliance</li>
+    </ul>
+
+    <h2>AI Operations vs MLOps</h2>
+
+    <p>
+        MLOps focuses on training and deploying models.
+        AI Operations focuses on <strong>behavior, reliability, and oversight</strong>
+        in live systems.
+    </p>
+
+    <p>
+        In practice, AI Operations builds on MLOps — but goes further into
+        governance, accountability, and human-in-the-loop design.
+    </p>
+
+    <h2>Careers in AI Operations</h2>
+
+    <p>
+        As AI becomes infrastructure, demand is rising for professionals such as:
+    </p>
+
+    <ul>
+        <li>AI Operator</li>
+        <li>AI Systems Engineer</li>
+        <li>Agentic Systems Engineer</li>
+        <li>AI Platform Architect</li>
+    </ul>
+
+    <div class="cta">
+        <p>
+            GlobalWork Academy trains professionals to operate AI systems responsibly
+            and qualify for global remote roles.
+        </p>
+        <a href="index.html">Join the GlobalWork Academy waitlist</a>
+    </div>
+
+    <div class="back-link">
+        ← <a href="index.html">Back to GlobalWork Academy</a>
+    </div>
+
+    <footer>
+        © 2026 GlobalWork Academy — Lagos • Praia • Mauritius • Global
+    </footer>
+
+</div>
 </body>
 </html>
-
